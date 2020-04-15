@@ -5,5 +5,11 @@ class Todo {
   String body;
   bool completed;
   bool expandDong = false;
-  Todo({this.title, this.body, this.completed});
+  TodoType type;
+  Todo({this.title, this.body, this.completed, this.type=TodoType.Default});
+}
+enum TodoType{
+  Default,
+  Call,
+  Work,
 }
